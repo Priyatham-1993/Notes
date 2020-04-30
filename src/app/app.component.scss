@@ -1,0 +1,47 @@
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.container {
+    max-width: 960px;
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
+
+.textarea {
+    width: 900px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #0808084f;
+    border-radius: 5px;
+    outline: none !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.inputCls {
+    width: 450px;
+    border: 25px;
+    border: 2px solid #999cab;
+    padding: 5px;
+    border-radius: 24px;
+}
+
+.scroll {
+    max-height: 500px !important;
+    overflow-y: auto !important;
+}
+
+.clr {
+    color: #ca3464 !important;
+}

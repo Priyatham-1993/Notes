@@ -1,0 +1,20 @@
+.txt {
+    font-size: larger;
+    padding: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list {
+    margin-top: 5% !important;
+    height: 15% !important;
+    display: flex !important;
+}
+
+.ext {
+    margin-top: 10%;
+    float: right;
+    cursor: pointer;
+}
