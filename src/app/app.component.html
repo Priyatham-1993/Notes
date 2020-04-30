@@ -1,0 +1,31 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <img src="../assets/data/notes-icon-mac.jpg" width="25vh" alt="">
+  <h5 class="my-0 mr-md-auto font-weight-normal clr">NOTES</h5>
+</div>
+<div class="row">
+  <div class="col-md-4 col-xs-12 scroll">
+    <input type="text" class="inputCls" [(ngModel)]="searchedval" name="abcd" (ngModelChange)="getSearchedValue()"
+      placeholder="search..." autofocus>
+    <br>
+    <div *ngFor="let note of notesArray">
+      <app-notes-list [note]="note" (getemittedNote)="getemittedNote($event)" (deleteSelectedNote)="deleteNote($event)">
+      </app-notes-list>
+    </div>
+  </div>
+  <div class="col-6 col-md-8 col-xs-12">
+    <div>
+      <textarea class="textarea" [(ngModel)]="textValue" id="test" placeholder="Type here....." autofocus></textarea>
+    </div>
+    <div style="margin-top: 1%;
+    float: inherit;">
+      <span>
+        <button type="button" (click)="saveNote()" *ngIf="!isUpdate"
+          class="btn btn-sm btn-outline-success">Create</button>
+      </span>
+      <span>
+        <button type="button" (click)="updateNote()" *ngIf="isUpdate"
+          class="btn btn-sm btn-outline-primary">Update</button>
+      </span>
+    </div>
+  </div>
+</div>
